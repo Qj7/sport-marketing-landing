@@ -6,8 +6,8 @@ export default function Hero() {
       {/* Background Image - Right Side */}
       <div className="absolute inset-0 lg:left-1/2">
         <Image
-          src="/images/coffee.png"
-          alt="Cold coffee latte"
+          src="https://www.pngall.com/wp-content/uploads/13/Spiderman-Logo-PNG-Cutout.png"
+          alt="Spiderman Logo"
           fill
           className="object-cover object-center"
           priority
