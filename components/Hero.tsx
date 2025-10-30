@@ -2,14 +2,14 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-white">
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-white pt-16">
       {/* Background Image - Right Side */}
-      <div className="absolute inset-0 lg:left-1/2">
+      <div className="absolute inset-x-0 top-16 bottom-0 lg:left-1/2">
         <Image
-          src="https://www.pngall.com/wp-content/uploads/13/Spiderman-Logo-PNG-Cutout.png"
-          alt="Spiderman Logo"
+          src="/images/football.png"
+          alt="Football"
           fill
-          className="object-cover object-center"
+          className="object-contain object-center"
           priority
         />
       </div>
