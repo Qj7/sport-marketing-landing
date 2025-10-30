@@ -8,6 +8,7 @@ import Link from 'next/link'
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isWhatWeDoOpen, setIsWhatWeDoOpen] = useState(false)
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
   const navItems = [
     {
@@ -35,7 +36,7 @@ export default function Header() {
             <div className="flex-shrink-0">
               <Link href="/" className="block">
                 <Image
-                  src="/images/logoblack.png"
+                  src={`${prefix}/images/logoblack.png`}
                   alt="SportPro Logo"
                   width={180}
                   height={48}

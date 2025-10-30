@@ -1,12 +1,13 @@
 import Image from 'next/image'
 
 export default function Hero() {
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-white pt-16">
       {/* Background Image - Right Side */}
       <div className="absolute inset-x-0 top-16 bottom-0 lg:left-1/2">
         <Image
-          src="/images/football.png"
+          src={`${prefix}/images/football.png`}
           alt="Football"
           fill
           className="object-contain object-center"
