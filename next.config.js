@@ -14,7 +14,7 @@ const nextConfig = {
       },
     ],
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/sport-marketing-landing' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/sport-marketing-landing/' : '',
   basePath: process.env.NODE_ENV === 'production' ? '/sport-marketing-landing' : '',
 }
 

@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -32,7 +33,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="/" className="block">
+              <Link href="/" className="block">
                 <Image
                   src="/images/logoblack.png"
                   alt="SportPro Logo"
@@ -41,7 +42,7 @@ export default function Header() {
                   priority
                   className="h-12 w-auto object-contain"
                 />
-              </a>
+              </Link>
             </div>
 
           {/* Desktop Navigation */}
