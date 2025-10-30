@@ -4,59 +4,49 @@ export default function About() {
   const achievements = [
     {
       icon: Users,
-      number: '150+',
-      label: 'Happy Clients',
-      description: 'From startups to top sports brands'
+      title: 'We love sports. 💙',
+      text:
+        'In all its forms, disciplines, and expressions. We understand and share the dedication you put into your journey.'
     },
     {
       icon: Award,
-      number: '25+',
-      label: 'Awards & Prizes',
-      description: 'Recognition in sports marketing industry'
+      title: 'We’ve got the skills. ⚙️',
+      text:
+        'Not just sports skills — we also know how to design, code, and create engaging content.'
     },
     {
       icon: Target,
-      number: '300%',
-      label: 'Average ROI Growth',
-      description: 'Measurable results for our clients'
+      title: 'You can count on us. 💪',
+      text:
+        'We’re down-to-earth and reliable. We reply to messages quickly and clearly, and we always keep our promises.'
     }
   ]
 
   const values = [
-    'Innovative marketing approaches',
-    'Data and analytics-based decisions',
-    'Transparency and honesty in work',
-    'Long-term partnership relationships'
+    'Honesty — we help, not push or sell.',
+    'Human Approach — easy to reach, easy to work with.',
+    'Tailored Experience — what fits you, not one-size-fits-all.',
+    'Pay for Results — we love money, but good Karma comes first.'
   ]
 
   return (
     <section id="about" className="section-padding bg-white">
       <div className="container-custom">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Content */}
           <div>
             <div className="mb-8">
-              <span className="text-primary-600 font-semibold text-lg">About Team</span>
+              <span className="text-primary-600 font-semibold text-lg">Why Us</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mt-4 mb-6 font-display">
                 Experts in Sports <span className="gradient-text">Marketing</span>
               </h2>
             </div>
 
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              We are a team of professionals with years of experience in sports marketing.
-              Our expertise covers all aspects of promoting sports brands,
-              from strategic planning to implementing creative campaigns.
-            </p>
-
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              We understand the specifics of the sports industry and know how to create
-              effective marketing solutions that will lead to growth
-              in brand awareness and increased revenue.
-            </p>
+            {/* Introductory text removed as requested */}
 
             {/* Values */}
             <div className="mb-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Our Principles:</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Our principles</h3>
               <ul className="space-y-3">
                 {values.map((value, index) => (
                   <li key={index} className="flex items-center">
@@ -68,7 +58,7 @@ export default function About() {
             </div>
 
             <button className="btn-primary">
-              Learn More About Us
+              Contact Us
             </button>
           </div>
 
@@ -86,14 +76,11 @@ export default function About() {
                       <achievement.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <div className="text-2xl md:text-3xl font-bold gradient-text mb-1">
-                        {achievement.number}
-                      </div>
                       <div className="text-lg font-semibold text-gray-900 mb-1">
-                        {achievement.label}
+                        {achievement.title}
                       </div>
-                      <div className="text-gray-600 text-sm">
-                        {achievement.description}
+                      <div className="text-gray-600 text-sm leading-relaxed">
+                        {achievement.text}
                       </div>
                     </div>
                   </div>
@@ -101,19 +88,7 @@ export default function About() {
               ))}
             </div>
 
-            {/* Team Photo Placeholder */}
-            <div className="relative">
-              <div className="bg-gradient-to-br from-primary-100 to-secondary-100 rounded-2xl h-64 flex items-center justify-center overflow-hidden">
-                <div className="text-center">
-                  <Users className="w-16 h-16 text-primary-600 mx-auto mb-4" />
-                  <p className="text-gray-600 font-medium">Our Expert Team</p>
-                </div>
-              </div>
-
-              {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary-500 rounded-full animate-pulse"></div>
-              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-secondary-500 rounded-full animate-pulse animation-delay-1000"></div>
-            </div>
+            {/* Team photo block removed as requested */}
           </div>
         </div>
       </div>

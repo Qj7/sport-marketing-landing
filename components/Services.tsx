@@ -1,42 +1,42 @@
-import { Target, Users, TrendingUp, Megaphone, Zap, Award } from 'lucide-react'
+import { Briefcase, Palette, Globe, Camera, Megaphone, DollarSign } from 'lucide-react'
 
 export default function Services() {
   const services = [
     {
-      icon: Target,
-      title: 'Strategic Planning',
-      description: 'We develop comprehensive marketing strategies to achieve your goals.',
-      features: ['Market Analysis', 'Target Audience', 'Positioning', 'KPI Metrics']
+      icon: Briefcase,
+      title: 'Marketing & Strategy',
+      description: 'We create strategies that grow your brand, engage your community, and deliver results.',
+      features: ['Brand Audit', 'Market Research', 'Channel Selection', 'Campaign Planning']
     },
     {
-      icon: Users,
-      title: 'Community Management',
-      description: 'We create and develop active communities around your brand.',
-      features: ['SMM Strategy', 'Content Planning', 'Crisis Management', 'Opinion Leaders']
+      icon: Palette,
+      title: 'Branding & Design',
+      description: 'We build strong visual identities that make your sports brand stand out and stay memorable.',
+      features: ['Logo & Identity Design', 'Brandbook & Guidelines', 'Visual Communication', 'Merch Design & Promo Kit']
     },
     {
-      icon: TrendingUp,
-      title: 'Performance Marketing',
-      description: 'We maximize ROI through effective advertising campaigns.',
-      features: ['Search Advertising', 'Display Advertising', 'Analytics', 'Optimization']
+      icon: Globe,
+      title: 'Web & Social Media',
+      description: 'We create and manage your brand\'s digital presence — from websites to social media — to grow and engage your sports community.',
+      features: ['Website & Landing Page Development', 'UX/UI Design', 'Social Media Management & Analytics', 'Content Planning & Scheduling']
+    },
+    {
+      icon: Camera,
+      title: 'Content Production',
+      description: 'We create engaging content that tells your story and drives community connection.',
+      features: ['Photo & Video Production', 'Editing & Motion Design', 'Graphic Design & Infographics', 'Storytelling & Copywriting']
     },
     {
       icon: Megaphone,
-      title: 'PR & Media',
-      description: 'We increase brand awareness through quality PR.',
-      features: ['Press Releases', 'Media Partnerships', 'Crisis PR', 'Events']
+      title: 'Digital Promotion',
+      description: 'We boost your sports brand online through targeted campaigns and social media strategies that reach the right audience.',
+      features: ['SEO & Content Promotion', 'Targeted Ads (Meta, TikTok, VK, Google)', 'Social Media Advertising']
     },
     {
-      icon: Zap,
-      title: 'Ambassadors & Influencers',
-      description: 'We work with famous athletes and influencers.',
-      features: ['Ambassador Selection', 'Influencer Campaigns', 'Content Collaborations', 'Measurable Results']
-    },
-    {
-      icon: Award,
-      title: 'Branding & Creative',
-      description: 'We create recognizable visual style and creative campaigns.',
-      features: ['Logo & Branding', 'Creative Concepts', 'Video Production', 'Photo Production']
+      icon: DollarSign,
+      title: 'Sales & Performance',
+      description: 'We help your sports brand convert interest into sales and track what really works.',
+      features: ['Lead Generation', 'Sales Funnel Optimization', 'CRM & Analytics', 'Performance Tracking']
     }
   ]
 
