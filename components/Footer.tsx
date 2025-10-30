@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
 // Social icons replaced with Lineicons
 
 export default function Footer() {
@@ -20,10 +20,10 @@ export default function Footer() {
   ]
 
   const socialLinks = [
-    { iconClass: 'lni lni-facebook-filled', href: '#', label: 'Facebook' },
-    { iconClass: 'lni lni-twitter-filled', href: '#', label: 'Twitter' },
-    { iconClass: 'lni lni-instagram-filled', href: '#', label: 'Instagram' },
-    { iconClass: 'lni lni-linkedin-original', href: '#', label: 'LinkedIn' },
+    { Icon: Facebook, href: '#', label: 'Facebook' },
+    { Icon: Twitter, href: '#', label: 'Twitter' },
+    { Icon: Instagram, href: '#', label: 'Instagram' },
+    { Icon: Linkedin, href: '#', label: 'LinkedIn' },
   ]
 
   return (
@@ -36,7 +36,7 @@ export default function Footer() {
             <div className="lg:col-span-1">
               <div className="mb-6">
                 <div className="text-2xl font-bold gradient-text font-display mb-4">
-                  SportPro
+                  Sportvisible
                 </div>
                 <p className="text-gray-300 leading-relaxed">
                   Professional marketing solutions for sports brands,
@@ -50,10 +50,10 @@ export default function Footer() {
                   <a
                     key={index}
                     href={social.href}
-                    className="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-colors duration-200 group"
+                    className="text-white/80 hover:text-white transition-colors duration-200 group"
                     aria-label={social.label}
                   >
-                    <i className={`${social.iconClass} text-lg group-hover:scale-110 transition-transform`}></i>
+                    <social.Icon className="w-6 h-6" />
                   </a>
                 ))}
               </div>
@@ -97,25 +97,27 @@ export default function Footer() {
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-primary-500 mr-3 flex-shrink-0" />
                   <a
-                    href="mailto:hello@sportpro.com"
+                    href="mailto:hryhorii@sportvisible.media"
                     className="text-gray-300 hover:text-white transition-colors duration-200"
                   >
-                    hello@sportpro.com
+                    hryhorii@sportvisible.media
                   </a>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-primary-500 mr-3 flex-shrink-0" />
                   <a
-                    href="tel:+15551234567"
+                    href="https://wa.me/48600608152"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-gray-300 hover:text-white transition-colors duration-200"
                   >
-                    +1 (555) 123-4567
+                    +48 600 608 152 (WhatsApp)
                   </a>
                 </div>
                 <div className="flex items-start">
                   <MapPin className="w-5 h-5 text-primary-500 mr-3 flex-shrink-0 mt-1" />
                   <div className="text-gray-300">
-                    New York, Sports Avenue, 1
+                    Warsaw, Aleje Jerozolimskie 1
                   </div>
                 </div>
               </div>
@@ -126,7 +128,7 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="py-6 flex flex-col md:flex-row items-center justify-between">
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} SportPro Marketing. All rights reserved.
+            © {new Date().getFullYear()} Sportvisible Marketing. All rights reserved.
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">

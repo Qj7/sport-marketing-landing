@@ -1,4 +1,4 @@
-# SportPro Marketing - Лендинг Страница
+# Sportvisible Marketing - Лендинг Страница
 
 Адаптивная лендинг страница для спортивного маркетингового агентства, созданная с использованием Next.js 14, TypeScript и Tailwind CSS.
 

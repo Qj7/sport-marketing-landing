@@ -30,14 +30,14 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="about" className="section-padding bg-slate-950">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Content */}
           <div>
             <div className="mb-8">
-              <span className="text-primary-600 font-semibold text-lg">Why Us</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mt-4 mb-6 font-display">
+              <span className="text-sky-400 font-semibold text-lg">Why Us</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-4 mb-6 font-display">
                 Experts in Sports <span className="gradient-text">Marketing</span>
               </h2>
             </div>
@@ -46,20 +46,27 @@ export default function About() {
 
             {/* Values */}
             <div className="mb-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Our principles</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Our principles</h3>
               <ul className="space-y-3">
                 {values.map((value, index) => (
                   <li key={index} className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0" />
-                    <span className="text-gray-600">{value}</span>
+                    <CheckCircle className="w-5 h-5 text-indigo-400 mr-3 flex-shrink-0" />
+                    <span className="text-slate-300">{value}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <button className="btn-primary">
-              Contact Us
-            </button>
+            <a
+              href="https://wa.me/48600608152"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-whatsapp group"
+            >
+              <i className="lni lni-whatsapp text-lg"></i>
+              <span className="inline group-hover:hidden">Contact Us</span>
+              <span className="hidden group-hover:inline">10 minutes answer</span>
+            </a>
           </div>
 
           {/* Stats and Visual */}
@@ -69,17 +76,17 @@ export default function About() {
               {achievements.map((achievement, index) => (
                 <div
                   key={index}
-                  className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300"
+                  className="bg-slate-900 rounded-2xl p-6 ring-1 ring-slate-800 hover:ring-slate-700 transition-shadow duration-300"
                 >
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-sky-400 to-violet-500 rounded-xl flex items-center justify-center flex-shrink-0">
                       <achievement.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <div className="text-lg font-semibold text-gray-900 mb-1">
+                      <div className="text-lg font-semibold text-white mb-1">
                         {achievement.title}
                       </div>
-                      <div className="text-gray-600 text-sm leading-relaxed">
+                      <div className="text-slate-300 text-sm leading-relaxed">
                         {achievement.text}
                       </div>
                     </div>

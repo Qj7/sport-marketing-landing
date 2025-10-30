@@ -14,7 +14,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'SportPro Marketing - Sports Marketing Agency',
+  title: 'Sportvisible Marketing - Sports Marketing Agency',
   description: 'Professional marketing solutions for sports brands, teams and athletes',
   keywords: 'sports marketing, sports promotion, sports brands, sports teams',
 }
@@ -29,7 +29,7 @@ export default function RootLayout({
       <head>
         <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
       </head>
-      <body className="antialiased">
+      <body className="antialiased bg-gray-950 text-gray-100">
         {children}
       </body>
     </html>
